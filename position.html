@@ -1,0 +1,41 @@
+  <!DOCTYPE html> 
+  <html>
+    <head>
+      <title>Position</title>
+      <style></style>
+    </head>
+    <body style="height:3000px; padding: 60px 0px 0px 80px;">
+      <div style="background-color:black; color: white;
+          position: fixed; top: 0px; left: 0px; right: 50px; height: 50px; 
+          height:50px; z-index: 1; ">
+        header
+      </div>
+
+      <div style="background-color:red; color: white; position:fixed;
+          left: 0; bottom: 0; top: 50px; width:72px ">
+        sidebar
+        <div style="position: absolute; background-color:blueviolet; color:white;
+        top: 0px; right:0px; ">
+        X
+        </div>
+      </div>
+
+      <div style="position: absolute; background-color:blueviolet; color:white;
+            top:10px; right: 10px; z-index:2; ">
+        absolute
+      </div>
+
+      <div style="background-color:lightblue; height:200px; width: 200px;
+      position: static; ">
+        div2
+      </div>
+      <div style="background-color:lightpink; height:200px; width: 200px;
+      position: relative;">
+        div2
+        <div style="position: absolute; background-color: black; color:white;
+          right: 10px; bottom:10px;">
+          5:00
+        </div>
+      </div>
+    </body>
+  </html>

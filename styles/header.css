@@ -1,0 +1,160 @@
+
+.header {
+height: 55px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+background-color: #ffffff; 
+border-bottom: 1px solid #e6e6e6;
+z-index: 100;
+}
+
+.left-section{
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-menu{
+  height: 24px;
+  margin: 0px 24px 0px 24px;
+}
+
+.youtube-logo{
+  height: 20px;
+}
+
+.middle-section{
+  flex: 1;
+  margin: 0px 35px  0px 70px;
+  max-width: 700px ;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar::placeholder{
+  font-family: Roboto, Arial;
+  font-size: 16px;
+}
+.search-bar{
+  flex: 1;
+  height: 40px;
+  padding: 0px 0px 0px 12px;
+  align-items: center;
+  border: 1px solid #b4b4b4;
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.1);
+  width: 0px;
+}
+
+.search-icon{
+  height: 20px;
+}
+
+.search-button{
+  border: 1px solid #b4b4b4;
+}
+
+.search-button, 
+.voice-search-button, 
+.upload-container,
+.app-container, 
+.noti{
+  height: 41px;
+  width: 60px;
+  border-radius: 2px;
+  margin: 0px 8px 0px 0px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-container .tooltip,
+.app-container .tooltip,
+.noti .tooltip{
+  font: 400 12px Roboto, Arial, sans-serif;
+  display: none;
+  position: absolute;
+  color: white;
+  background-color:grey;
+  border-radius: 2px;
+  padding: 2px 8px 4px 8px;
+  z-index: 100;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.search-button:hover .tooltip, 
+.voice-search-button:hover .tooltip,
+.upload-container:hover .tooltip,
+.app-container:hover .tooltip,
+.noti:hover .tooltip{
+  display: block;
+  opacity: 1;
+}
+
+.voice-search-icon{
+  height: 24px;
+}
+
+.voice-search-button{
+  background-color: rgb(246, 245, 245);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: none;
+}
+
+.right-section{
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 20px 0px 0px;
+  flex-shrink: 0;
+}
+
+.upload-icon{
+  height: 25px;
+}
+
+.app-icon{
+  height: 25px;
+}
+
+.notification-icon{
+  height: 25px;
+}
+
+.noti{
+position: relative;
+}
+
+.notification-badge{
+  font: 400 11px Roboto, Arial;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: red;
+  color: white;
+  padding: 2px 5px 2px 5px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+
+}
+.channel-icon{
+  height: 25px;
+  border-radius: 50%;
+} 
+
